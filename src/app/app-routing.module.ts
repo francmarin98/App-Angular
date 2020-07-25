@@ -6,15 +6,15 @@ import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
-  {path:'', component: PortfolioComponent },
+  {path:'home', component: PortfolioComponent },
   {path:'item', component: ItemComponent },
   {path: 'about',component: AboutComponent},
-  {path: '**',pathMatch:'full' ,redirectTo:''}
+  {path: '**',pathMatch:'full' ,redirectTo:'home'}
 ]
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {useHash:true})
   ],
   exports:[
     RouterModule
