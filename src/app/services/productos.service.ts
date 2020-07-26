@@ -19,7 +19,10 @@ export class ProductosService {
       .subscribe((data: infoProducto[]) => {
         console.log(data);
         this.producto = data;
-        this.cargando = false;
+
+        setTimeout(() => {
+          this.cargando = false;
+        }, 200);
     })
   }
 }
