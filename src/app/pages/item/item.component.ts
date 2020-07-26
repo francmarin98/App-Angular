@@ -16,7 +16,7 @@ export class ItemComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((parametros => {
-      console.log(parametros["id"]);
+      // console.log(parametros["id"]);
       this.productobjetivo.getProducto(parametros['id'])
         .subscribe((producto: productoDescripcion) => {
           // console.log(producto);
