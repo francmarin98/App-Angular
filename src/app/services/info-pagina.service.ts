@@ -19,7 +19,7 @@ export class InfoPaginaService {
 
   private cargainfo() {
     this.http.get('assets/data/data-pagina.json').subscribe((resp:InfoPagina) => {
-      console.log(resp); //Ver la respuesta completa
+      // console.log(resp); //Ver la respuesta completa
       // console.log(resp['email']); //Ver un campo especifico de la respuesta
       this.cargada = true; //Notifica si la info esta cargada, esto puede servir para hacer loading o algo en particular
       this.info = resp; // Guarda la informacion que viene en la data
@@ -28,7 +28,7 @@ export class InfoPaginaService {
 
   private cargaequipo() {
     this.http.get('https://angular-html-9b36d.firebaseio.com/equipo.json').subscribe((resp: InfoEquipo[]) => {
-      console.log(resp);
+      // console.log(resp);
       this.equipo = resp;
     })
   }
