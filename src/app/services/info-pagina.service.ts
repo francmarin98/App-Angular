@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { InfoPagina } from '../interfaces/info-pagina.interface';
 import { InfoEquipo } from '../interfaces/info-equipo.interface';
-import { ProductosService } from './productos.service';
-import { infoProducto } from '../interfaces/info-productos.interface';
 
 @Injectable({
   providedIn: 'root'
